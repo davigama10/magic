@@ -56,12 +56,16 @@ function construct(){
 }
 
 construct();
-//print_tudo();
 
 function reconstruct(aux){
+
+    let dale = document.getElementById('pense');
+    dale.innerHTML = "";
+    
     let aux_fileira = aux;
     
     console.clear();
+    console.log(dale);
 
     myArray = [];
 
@@ -106,6 +110,10 @@ function reconstruct(aux){
 
 function final(){
 
+    let dale = document.getElementById('botoes');
+    dale.innerHTML = "";
+    console.log(dale);
+
     resultDIV = document.getElementById('result');
     resultDIV.innerHTML = "";
  
@@ -115,6 +123,9 @@ function final(){
         
     aux.innerHTML = text;
     resultDIV.append(aux);
+
+    text2 = 'Atualize a página para continuar!';
+    resultDIV.append(text2);
 
     console.log("seu número é: ")
     console.log(myArray[10]);
